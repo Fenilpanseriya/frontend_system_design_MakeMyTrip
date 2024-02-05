@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        #inner1,#inner2,#inner3,#inner4,#inner5,#inner6,#inner7{
+            height: 200px;
+            border: 2px solid black;
+            width: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="outer">
+            <div id="inner1" onclick="handle(event,this)">
+
+            </div>
+            <div id="inner2" onclick="handle(event,this)">
+
+            </div>
+            <div id="inner3" onclick="handle(event,this)"> 
+
+            </div>
+        </div>
+        <div id="inner4" style="margin-top: 10px;" onclick="handle(event,this)"></div>
+        <div class="outer">
+            <div id="inner5" onclick="handle(event,this)">
+
+            </div>
+            <div id="inner6"  onclick="handle(event,this)">
+
+            </div>
+            <div id="inner7" onclick="handle(event,this)"> 
+
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
